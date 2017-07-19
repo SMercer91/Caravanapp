@@ -36,14 +36,14 @@
                                 <li><a hef="#"><i class="fa fa-home"></i> Home </a></li>
                                 <li><a><i class="fa fa-edit"></i> Products <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="{{route('brands.index')}}">Brands list</a></li>
-                                        <li><a href="{{route('product-categories.index')}}">Categories</a></li>
-                                        <li><a href="{{route('products.index')}}">Products list</a></li>
+                                        <li><a href="{{route('caravan.index')}}">Brands list</a></li>
+                                        <li><a href="">Categories</a></li>
+                                        <li><a href="">Products list</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{route('customers.index')}}"><i class="fa fa-user"></i> Customers </a></li>
-                                <li><a href="{{route('orders.index')}}"><i class="fa fa-shopping-cart"></i> Orders </a></li>
-                                <li><a href="{{route('users.index')}}"><i class="fa fa-users"></i> Users </a></li>
+                                <li><a href=""><i class="fa fa-user"></i> Customers </a></li>
+                                <li><a href=""><i class="fa fa-shopping-cart"></i> Orders </a></li>
+                                <li><a href=""><i class="fa fa-users"></i> Users </a></li>
                             </ul>
                         </div>
                     </div>
@@ -112,7 +112,12 @@
             <!-- /footer content -->
         </div>
     </div>
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.js')}}" ></script>
 
-<!-- javascript resources -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ asset('js/bootstrap.min.js')}}" ></script>
+
+    <script src="{{ asset('js/modal.js')}}"></script>
 </body>
 </html>

@@ -71,6 +71,7 @@
     </nav>
     
     <div class="container">
+    @include('templates.admin.partials.alerts')
         @yield('content')
         <!-- Footer -->
         <footer>

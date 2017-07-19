@@ -69,7 +69,7 @@ class CaravanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return redirect()->route('caravanadmin.caravanlist')->with('success', "The brand <strong>Brand</strong> has successfully been updated.");
+        return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been updated.");
     }
 
     /**
@@ -80,6 +80,6 @@ class CaravanController extends Controller
      */
     public function destroy($id)
     {
-        return redirect()->route('caravanadmin.caravanlist')->with('success', "The brand <strong>Brand</strong> has successfully been archived.");
+        return redirect()->route('caravan.index')->with('success', "The brand <strong>Brand</strong> has successfully been archived.");
     }
 }

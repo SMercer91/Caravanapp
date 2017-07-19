@@ -12,7 +12,7 @@
                 </div>
                 <div class="x_content">
                     <br />
-                    <form method="post" action="{{ route('brands.store') }}" data-parsley-validate class="form-horizontal form-label-left">
+                    <form method="post" action="{{ route('caravan.store') }}" data-parsley-validate class="form-horizontal form-label-left">
 
                         <div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brand">Brand <span class="required">*</span>
