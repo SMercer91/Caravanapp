@@ -27,3 +27,7 @@ Route::resource('caravans', 'CaravanController');
 Route::get('form', 'PagesController@getForm');
 Route::post('/insert', 'Controller@insert');
 Route::post('/search', 'Controller@searchresult');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
