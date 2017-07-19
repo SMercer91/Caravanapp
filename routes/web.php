@@ -23,7 +23,6 @@ Route::get('bloghome2', 'PagesController@getBloghome2');
 Route::get('bloghome1', 'PagesController@getBloghome2');
 
 Route::get('/', 'PagesController@getIndex');
-Route::resource('cars', 'CarController');
 Route::resource('caravans', 'CaravanController');
 Route::get('form', 'PagesController@getForm');
 Route::post('/insert', 'Controller@insert');

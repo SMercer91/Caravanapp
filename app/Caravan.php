@@ -10,4 +10,8 @@ class Caravan extends Model
     {
         return $this->hasMany('App\CaravanImages');
     }
+    public function extras()
+    {
+    	return $this->hasMany('App\Extras');
+    }
 }

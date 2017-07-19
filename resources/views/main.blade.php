@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarcollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="stock">Stock</a>
+                        <a href="/stock">Stock</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <b class="caret"></b></a>
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="contact">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>  
                 </ul>
             </div>
