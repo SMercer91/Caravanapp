@@ -1,29 +1,13 @@
 @extends('main')
 
 
-        <header id="myCarousel" class="carousel slide">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/logo.png" style="height: 100%; width: 100%;" />
-                </div>
-                <div class="item">
-                    <img src="images/CSC_0598.jpg" style="height: 100%; width: 100%;" />
-                </div>
-                <div class="item">
-                    <img src="images/CSC_0599.jpg" style="height: 100%; width: 100%;" />
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
+        <header id="logo">
+            <img src="images/logo.png" style="height: 60%; width: 100%;" />
         </header>
+                    
+                
+
+            
 @section('content')
     
         
@@ -122,11 +106,4 @@
                 <img class="img-responsive" src="images/DSC_0588.jpg" alt="">
             </div>
         </div>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 @endsection
