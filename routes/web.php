@@ -27,3 +27,6 @@ Route::resource('caravans', 'CaravanController');
 Route::get('form', 'PagesController@getForm');
 Route::post('/insert', 'Controller@insert');
 Route::post('/search', 'Controller@searchresult');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+    Route::resource('caravans', 'CaravanController');
+});

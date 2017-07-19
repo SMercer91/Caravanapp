@@ -1,9 +1,9 @@
 <?php
 
-namespace Larashop\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use Larashop\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 
 class CaravanController extends Controller
 {
