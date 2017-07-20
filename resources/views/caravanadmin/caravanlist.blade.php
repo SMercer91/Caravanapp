@@ -15,51 +15,45 @@
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>Caravan</th>
+                                <th>Caravan ID</th>
+                                <th>Model</th>
+                                <th>Year</th>
+                                <th>Size</th>
+                                <th>Bedrooms</th>
+                                <th>Price</th>
                                 <th>Description</th>
-                                <th>Action</th>
+                                <th>Edit/Delete</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Caravan</th>
+                                <th>Caravan ID</th>
+                                <th>Model</th>
+                                <th>Year</th>
+                                <th>Size</th>
+                                <th>Bedrooms</th>
+                                <th>Price</th>
                                 <th>Description</th>
-                                <th>Action</th>
+                                <th>Edit/Delete</th>
                             </tr>
                         </tfoot>
                         <tbody>
+                        @foreach ($caravan as $value)
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
+                                <td>{{ $value->id }}</td>
+                                <td>{{ $value->model }}</td>
+                                <td>{{ $value->year }}</td>
+                                <td>{{ $value->size }}</td>
+                                <td>{{ $value->bedrooms }}</td>
+                                <td>{{ $value->price }}</td>
+                                <td>{{ $value->description }}</td>
                                 <td>
                                     <a href="{{route('caravan.edit', ['id' => 1])}}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
                                     <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
                                 </td>
+                                
                             </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>
-                                    <a href="" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
-                                    <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>
-                                    <a href="" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
-                                    <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>
-                                    <a href="" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
-                                    <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
-                                </td>
-                            </tr>
+                         @endforeach
                         </tbody>
                     </table>
                 </div>

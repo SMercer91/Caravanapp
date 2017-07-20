@@ -18,17 +18,17 @@
                         <div class="panel-body">
                             <form class="form-inline" role="form" action="/search" method="POST">
                               {{ csrf_field() }}  
-  <div class="form-group">
-    <label for="searchterm" class="col-sm-2 control-label">Model</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="searchterm" name="searchterm">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Search</button>
-    </div>
-  </div>
+                              <div class="form-group">
+                                <label for="searchterm" class="col-sm-2 control-label">Model</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="searchterm" name="searchterm">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Search</button>
+                                </div>
+                              </div>
                             </form>
                         </div>
                     </div>

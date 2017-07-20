@@ -42,5 +42,5 @@ class Controller extends BaseController
         $data = $req->input('searchterm');
         return view('pages/stock')->with(['caravan'=> Caravan::where('model',$data)->get()]);
     }
-    	
+
 }

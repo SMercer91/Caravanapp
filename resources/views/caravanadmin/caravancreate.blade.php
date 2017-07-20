@@ -7,43 +7,54 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Insert Caravan <a href="{{route('caravan.create')}}" class="btn btn-info btn-xs"><i class="fa fa-chevron-left"></i> Back </a></h2>
+                    <h2>Insert Caravan <a href="{{route('caravan.index')}}" class="btn btn-info btn-xs"><i class="fa fa-chevron-left"></i> Back </a></h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
                     <br />
-                    <form method="post" action="{{ route('caravan.store') }}" data-parsley-validate class="form-horizontal form-label-left">
-
-                        <div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brand">Brand <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" value="{{ Request::old('brand') ?: '' }}" id="brand" name="brand" class="form-control col-md-7 col-xs-12">
-                                @if ($errors->has('brand'))
-                                <span class="help-block">{{ $errors->first('brand') }}</span>
-                                @endif
+                    <form method="post" action="/insert" data-parsley-validate class="form-horizontal form-label-left">
+                        <form action="/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-label-left">
+                            {{csrf_field()}}
+                            <div class="form-group">
+                                <label for="YearOfCaravan">Year</label>
+                                <input type="text" class="form-control" name="year" placeholder="Enter The Year of The Caravan">
                             </div>
-                        </div>
 
-                        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" value="{{ Request::old('description') ?: '' }}" id="description" name="description" class="form-control col-md-7 col-xs-12">
-                                @if ($errors->has('description'))
-                                <span class="help-block">{{ $errors->first('description') }}</span>
-                                @endif
+                            <div class="form-group">
+                              <label for="ModelOfCaravan">Model</label>
+                              <input type="text" class="form-control" name="Model" placeholder="Enter The Model of The Caravan">
                             </div>
-                        </div>
-
-                        <div class="ln_solid"></div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                <input type="hidden" name="_token" value="{{ Session::token() }}">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                              
+                            <div class="form-group">
+                              <label for="SizeOfCaravan">Size</label>
+                              <input type="text" class="form-control" name="size" placeholder="Enter The Size of The Caravan">
                             </div>
-                        </div>
+
+                            <div class="form-group">
+                              <label for="BedroomsOfCaravan">Bedrooms</label>
+                              <input type="text" class="form-control" name="bedrooms" placeholder="Enter The Number of Bedrooms">
+                            </div>
+                              
+                            <div class="form-group">
+                              <label for="PriceOfCaravan">Price</label>
+                              <input type="text" class="form-control" name="price" placeholder="Enter The Price of The Caravan">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="ExtrasOfCaravan">Extras</label>
+                              <input type="text" class="form-control" name="extras" placeholder="Enter The Extras of The Caravan">
+                            </div>
+                            <div class="form-group">
+                                <label for="ExtrasOfCaravan">Description</label>
+                                <input type="text" class="form-control" name="description" placeholder="Enter The Extras of The Caravan">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Multiple Picture Upload</label>
+                                <input type="file" class="form-control-file" name="caravanPhotos[]" aria-describedby="fileHelp" multiple>
+                            </div>
+                            
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        
                     </form>
                 </div>
             </div>

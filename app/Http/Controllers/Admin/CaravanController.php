@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Caravan;
+use App\CaravanImages;
 
 class CaravanController extends Controller
 {
@@ -14,7 +16,8 @@ class CaravanController extends Controller
      */
     public function index()
     {
-        return view('caravanadmin.caravanlist');
+        return view('caravanadmin.caravanlist')->with(['caravan'=> Caravan::all()
+            ]);;
     }
 
     /**
@@ -35,7 +38,7 @@ class CaravanController extends Controller
      */
     public function store(Request $request)
     {
-        return redirect()->route('caravanadmin.caravanlist')->with('success', "The brand <strong>Brand</strong> has successfully been created.");
+        return redirect()->route('caravan.caravanlist')->with('success', "The Caravan <strong>Caravan</strong> has successfully been added to the database.");
     }
 
     /**
@@ -82,4 +85,5 @@ class CaravanController extends Controller
     {
         return redirect()->route('caravan.index')->with('success', "The brand <strong>Brand</strong> has successfully been archived.");
     }
+
 }
