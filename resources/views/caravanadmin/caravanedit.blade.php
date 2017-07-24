@@ -12,29 +12,38 @@
                 </div>
                 <div class="x_content">
                     <br />
-                    <form method="post" action="{{ route('caravan.update', ['id' => 1]) }}" data-parsley-validate class="form-horizontal form-label-left">
-
-                        <div class="form-group{{ $errors->has('caravan') ? ' has-error' : '' }}">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="caravan">Caravan <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" value="" id="Caravan" name="Caravan" readonly="1" class="form-control col-md-7 col-xs-12">
-                                @if ($errors->has('Caravan'))
-                                <span class="help-block">{{ $errors->first('Caravan') }}</span>
-                                @endif
+                    <form action="{{ route('caravan.update', ['id' => $id]) }}" method="post" enctype="multipart/form-data" class="form-horizontal form-label-left">
+                            {{csrf_field()}}
+                            <div class="form-group">
+                                <label for="YearOfCaravan">Year</label>
+                                <input type="text" class="form-control" name="year" placeholder="Enter The Year of The Caravan">
                             </div>
-                        </div>
 
-                        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description">Description <span class="required">*</span>
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="text" value="" id="description" name="description" class="form-control col-md-7 col-xs-12">
-                                @if ($errors->has('description'))
-                                <span class="help-block">{{ $errors->first('description') }}</span>
-                                @endif
+                            <div class="form-group">
+                              <label for="ModelOfCaravan">Model</label>
+                              <input type="text" class="form-control" name="Model" placeholder="Enter The Model of The Caravan">
                             </div>
-                        </div>
+                              
+                            <div class="form-group">
+                              <label for="SizeOfCaravan">Size</label>
+                              <input type="text" class="form-control" name="size" placeholder="Enter The Size of The Caravan">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="BedroomsOfCaravan">Bedrooms</label>
+                              <input type="text" class="form-control" name="bedrooms" placeholder="Enter The Number of Bedrooms">
+                            </div>
+                              
+                            <div class="form-group">
+                              <label for="PriceOfCaravan">Price</label>
+                              <input type="text" class="form-control" name="price" placeholder="Enter The Price of The Caravan">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ExtrasOfCaravan">Description</label>
+                                <input type="text" class="form-control" name="description" placeholder="Enter The Extras of The Caravan">
+                            </div>
+                            
 
                         <div class="ln_solid"></div>
 

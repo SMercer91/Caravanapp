@@ -12,7 +12,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>Are you sure you want to delete <strong>Caravan </strong></p>
+                    <p>Are you sure you want to delete <strong>This Caravan </strong></p>
                     <? echo $id ?>
 
                     <form method="POST" action="{{ route('caravan.destroy', ['id' => $id ]) }}">

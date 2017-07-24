@@ -60,7 +60,7 @@ class CaravanController extends Controller
      */
     public function edit($id)
     {
-        return view('caravanadmin.caravanedit');
+        return view('caravanadmin.caravanedit')->with(['id' => $id]);
     }
 
     /**
@@ -70,8 +70,17 @@ class CaravanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $req, $id)
     {
+        $year = $req->input('year');
+        $model = $req->input('Model');
+        $size = $req->input('size');
+        $bedrooms = $req->input('bedrooms');
+        $price = $req->input('price');
+        $des = $req->input('description');
+
+        $data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'description'=>$des);
+        Caravan::where('id', $id)->update($data);
         return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been updated.");
     }
 
