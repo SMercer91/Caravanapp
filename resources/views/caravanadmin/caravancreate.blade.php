@@ -12,7 +12,6 @@
                 </div>
                 <div class="x_content">
                     <br />
-                    <form method="post" action="/insert" data-parsley-validate class="form-horizontal form-label-left">
                         <form action="/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-label-left">
                             {{csrf_field()}}
                             <div class="form-group">

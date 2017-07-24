@@ -48,8 +48,8 @@
                                 <td>{{ $value->price }}</td>
                                 <td>{{ $value->description }}</td>
                                 <td>
-                                    <a href="{{route('caravan.edit', ['id' => 1])}}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
-                                    <a href="" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
+                                    <a href="{{route('caravan.edit', ['id' => $value->id])}}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>
+                                    <a href="{{route('caravan.show', ['id' => $value->id])}}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" title="Delete"></i> </a>
                                 </td>
                                 
                             </tr>

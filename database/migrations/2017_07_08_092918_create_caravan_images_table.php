@@ -16,7 +16,7 @@ class CreateCaravanImagesTable extends Migration
         Schema::create('caravan_images', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('caravan_id')->unsigned();
-            $table->foreign('caravan_id')->references('id')->on('caravans');
+            $table->foreign('caravan_id')->references('id')->on('caravans')->onDelete('cascade');
             $table->string('path');
         });
     }

@@ -49,7 +49,7 @@ class CaravanController extends Controller
      */
     public function show($id)
     {
-        return view('caravanadmin.caravandelete');
+        return view('caravanadmin.caravandelete')->with(['id' => $id]);
     }
 
     /**
@@ -83,7 +83,8 @@ class CaravanController extends Controller
      */
     public function destroy($id)
     {
-        return redirect()->route('caravan.index')->with('success', "The brand <strong>Brand</strong> has successfully been archived.");
+        Caravan::destroy($id);
+        return redirect()->route('caravan.index')->with('success', "The Caravan <strong>Caravan</strong> has successfully been Deleted.");
     }
 
 }
