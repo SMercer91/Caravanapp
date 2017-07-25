@@ -92,6 +92,10 @@ class CaravanController extends Controller
      */
     public function destroy($id)
     {
+        $caravan = Caravan::find($id);
+        foreach ($caravan->images as $img {
+            File::delete({{asset($img->path}})
+        }
         Caravan::destroy($id);
         return redirect()->route('caravan.index')->with('success', "The Caravan <strong>Caravan</strong> has successfully been Deleted.");
     }

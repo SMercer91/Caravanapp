@@ -22,10 +22,10 @@ class Controller extends BaseController
     	$size = $req->input('size');
     	$bedrooms = $req->input('bedrooms');
     	$price = $req->input('price');
-    	$extras = $req->input('extras');
+    	
         $des = $req->input('description');
 
-    	$data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'extras'=>$extras,'description'=>$des);
+    	$data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'description'=>$des);
 
     	$files = $req->file('caravanPhotos');
     	$id = DB::table('caravans')->insertGetId($data);
