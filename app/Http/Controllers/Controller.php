@@ -22,7 +22,7 @@ class Controller extends BaseController
     	$size = $req->input('size');
     	$bedrooms = $req->input('bedrooms');
     	$price = $req->input('price');
-    	
+    	$extras = $req->input('extras');
         $des = $req->input('description');
 
     	$data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'description'=>$des);
@@ -33,10 +33,8 @@ class Controller extends BaseController
     		$filename = $file->store('photos');
     		$data = array('caravan_id'=>$id,'path'=>$filename);
 			DB::table('caravan_images')->insert($data);
-        return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been added.");
     	}
-
-                
+        return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been added.");                
     	}
     function searchresult(Request $req)
     {

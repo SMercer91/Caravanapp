@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Caravan;
 use App\CaravanImages;
+use Illuminate\Support\Facades\Storage;
 
 class CaravanController extends Controller
 {
@@ -92,7 +93,12 @@ class CaravanController extends Controller
      */
     public function destroy($id)
     {
-       
+        $caravan = Caravan::find($id);
+        $images = $caravan->images;
+        foreach ($images as $img) {
+            Storage::delete($img->path);
+       }
+
         Caravan::destroy($id);
         return redirect()->route('caravan.index')->with('success', "The Caravan <strong>Caravan</strong> has successfully been Deleted.");
     }
