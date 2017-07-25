@@ -2,7 +2,7 @@
 
 
         <header id="logo">
-            <img src="images/logo.png" style="height: 60%; width: 100%;" />
+            <img src="images/logo.png" class="rounded mx-auto d-block" style="height: 60%; width:100%;" />
         </header>
                     
                 
@@ -18,21 +18,21 @@
                     Welcome Humber Holiday Homes
                 </h1>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;"/>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <p>Humber Holiday Homes is an established professional growing business offering quality new and used static caravans at discounted prices to the UK trade, public, caravan park owners as well as export to Europe, Cyprus and other overseas destinations.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;"/>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <p>Here at Humber Holiday Homes, we can arrange transport to the clients chosen destination; whether it be in the local area or across the UK. We also provide delivery for our European/Overseas clients to the UK docks of their choice. Making life simpler for you, our much valued customers.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;"/>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <p>We can be found in our new 6 acre sales site at Gilberdyke, 15 minutes from Hull on the A63. We have many years experience in the caravan sales trade with some of its staff members having over 30 years experience in the industry.<br><br></p>
@@ -60,38 +60,35 @@
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Caravan Portfolio</h2>
+                <h2 class="page-header">Finance</h2>
             </div>
-            <div class="col-lg-12">
-                <h3>These are just some of the caravans from our selection</h3>
+            <div class="col-md-4">
+                <a href="https://www.pegasuscaravanfinance.co.uk/humber-caravans/?introducer_contact_id=5944"> <img src="images/pegfin.jpg" class="img-responsive img-hover" alt=""></a>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0520.jpg" alt="">
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0537.jpg" alt="">
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0548.jpg" alt="">
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0562.jpg" alt="">
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0574.jpg" alt="">
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <img class="img-responsive img-portfolio" src="images/DSC_0587.jpg" alt="">
+            <div class="col-md-3">
+                <h4>In proud partnership with Pegasus Finance please view their website to apply for finance on our mobile homes.</h4>
             </div>
         </div>
-        <!-- /.row -->
 
-        <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Information About Our Caravans</h2>
+                <h2 class="page-header">Social Media</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <a href="https://www.facebook.com/humber.caravans/"> <img src="images/facebook.jpg" class="img-responsive img-hover" alt=""></a>
+                <br>
+                <a href="https://twitter.com/HumberCaravans"> <img src="images/twitter.jpg" class="img-responsive img-hover" alt=""></a>
+            </div>
+            
+            
+            
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Information</h2>
+            </div>
+            <div class="col-md-4">
                 <p>Our quality static caravans are suitable for a vast number of uses which could include:<p>
                 <ul>
                     <li>Supplying park owners</li>
@@ -101,9 +98,11 @@
                     <li>Mobile office</li>
                     <li>Site security office</li>
                 </ul>
+                <p>If purchased in full, we can store your mobile home for you until you can arrange delivery for your mobile home.
             </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="images/DSC_0588.jpg" alt="">
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/payment.png" alt="">
             </div>
+            
         </div>
 @endsection
