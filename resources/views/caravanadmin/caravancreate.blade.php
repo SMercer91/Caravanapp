@@ -12,7 +12,7 @@
                 </div>
                 <div class="x_content">
                     <br />
-                        <form action="/insert" method="post" enctype="multipart/form-data" class="form-horizontal form-label-left">
+                        <form action="/insert" method="post" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <div class="form-group">
                                 <label for="YearOfCaravan">Year</label>
@@ -39,13 +39,22 @@
                               <input type="text" class="form-control" name="price" placeholder="Enter The Price of The Caravan">
                             </div>
 
-                            <div class="form-group">
-                              <label for="ExtrasOfCaravan">Extras</label>
-                              <input type="text" class="form-control" name="extras" placeholder="Enter The Extras of The Caravan">
+                            <div class="form-check">
+                                <label for="Extras">Extras</label><br>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" name="centralheating">
+                                    Central Heating
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" name="doubleglazing">
+                                    Double Glazing
+                                </label>
                             </div>
                             <div class="form-group">
                                 <label for="ExtrasOfCaravan">Description</label>
-                                <input type="text" class="form-control" name="description" placeholder="Enter The Extras of The Caravan">
+                                <textarea class="form-control" input type="text"  name="description" placeholder="Enter The Extras of The Caravan"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">Multiple Picture Upload</label>
