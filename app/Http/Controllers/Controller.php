@@ -33,6 +33,7 @@ class Controller extends BaseController
     		$filename = $file->store('photos');
     		$data = array('caravan_id'=>$id,'path'=>$filename);
 			DB::table('caravan_images')->insert($data);
+        return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been added.");
     	}
 
                 
