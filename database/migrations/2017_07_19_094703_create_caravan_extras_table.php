@@ -16,7 +16,7 @@ class CreateCaravanExtrasTable extends Migration
         Schema::create('caravan_extras', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('caravan_id')->unsigned();
-            $table->foreign('caravan_id')->references('id')->on('caravans');
+            $table->foreign('caravan_id')->references('id')->on('caravans')->onDelete('cascade');
             $table->string('extra');
         });
     }
