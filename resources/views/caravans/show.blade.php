@@ -53,7 +53,7 @@
 
                                 <p>Bedrooms: {{ $caravan->bedrooms }}</p>
 
-                                <p>Extras: {{ $caravan->extras }}</p>
+                                
 
                                 <p>Description: {{ $caravan->description }}</p>
                                 <h2>£{{ $caravan->price }}</h2>

@@ -25,7 +25,7 @@ class Controller extends BaseController
     	$extras = $req->input('extras');
         $des = $req->input('description');
 
-    	$data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'extras'=>$extras,'description'=>$des);
+    	$data = array('year'=>$year,'model'=>$model,'size'=>$size,'bedrooms'=>$bedrooms,'price'=>$price,'description'=>$des);
 
     	$files = $req->file('caravanPhotos');
     	$id = DB::table('caravans')->insertGetId($data);
@@ -34,8 +34,7 @@ class Controller extends BaseController
     		$data = array('caravan_id'=>$id,'path'=>$filename);
 			DB::table('caravan_images')->insert($data);
     	}
-
-                
+        return redirect()->route('caravan.index')->with('success', "The caravan <strong>Caravan</strong> has successfully been added.");                
     	}
     function searchresult(Request $req)
     {

@@ -33,7 +33,7 @@
 
 	<div class="form-group">
 	  <label for="ExtrasOfCaravan">Extras</label>
-	  <input type="text" class="form-control" name="extras" placeholder="Enter The Extras of The Caravan">
+	  <input type="checkbox" class="form-control" name="extras" placeholder="Enter The Extras of The Caravan">
 	</div>
 	<div class="form-group">
 		<label for="ExtrasOfCaravan">Description</label>

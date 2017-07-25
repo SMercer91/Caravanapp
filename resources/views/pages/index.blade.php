@@ -1,12 +1,27 @@
 @extends('main')
 
 
+<<<<<<< HEAD
         <header id="logo">
             <img src="images/logo.png" class="rounded mx-auto d-block" style="height: 60%; width:100%;" />
+=======
+        <header id="logo">         
+            <div class="row">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
+                    <img src="images/logo.png" style="height: 40%; width: 100%;" />    <!--Mobile-->
+                </div>
+                <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                    <img src="images/logo.png" style="height: 50%; width: 100%;" />   <!--Tab-->
+                </div>
+                <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
+                    <img src="images/logo.png" style="height: 60%; width: 100%;" />   <!--Desktop-->
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
+                    <img src="images/logo.png" style="height: 60%; width: 100%;" /> <!--Large-->
+                </div>
+            </div>
+>>>>>>> c3cd874e6f6bfd10c581e40052f033eed49c4745
         </header>
-                    
-                
-
             
 @section('content')
     
