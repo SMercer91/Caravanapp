@@ -1,31 +1,20 @@
-@extends('main')
-
-
-<<<<<<< HEAD
-        <header id="logo">
-            <img src="images/logo.png" class="rounded mx-auto d-block" style="height: 60%; width:100%;" />
-=======
-        <header id="logo">         
+@extends('main')         
             <div class="row">
                 <div class="col-xs-12 hidden-sm hidden-md hidden-lg">  
-                    <img src="images/logo.png" style="height: 40%; width: 100%;" />    <!--Mobile-->
+                    <img src="images/logo.png" style="height: 25%; width: 100%;" class="img-responsive" />    <!--Mobile-->
                 </div>
                 <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
-                    <img src="images/logo.png" style="height: 50%; width: 100%;" />   <!--Tab-->
+                    <img src="images/logo.png" style="height: 50%; width: 100%;" class="img-responsive" />   <!--Tab-->
                 </div>
                 <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
-                    <img src="images/logo.png" style="height: 60%; width: 100%;" />   <!--Desktop-->
+                    <img src="images/logo.png" style="height: 60%; width: 100%;" class="img-responsive" />   <!--Desktop-->
                 </div>
                 <div class="hidden-xs hidden-sm hidden-md col-lg-12">
-                    <img src="images/logo.png" style="height: 60%; width: 100%;" /> <!--Large-->
+                    <img src="images/logo.png" style="height: 65%; width: 100%;" class="img-responsive" /> <!--Large-->
                 </div>
             </div>
->>>>>>> c3cd874e6f6bfd10c581e40052f033eed49c4745
-        </header>
-            
 @section('content')
-    
-        
+            
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -70,33 +59,34 @@
                 </div>
             </div>
         </div>
-        <!-- /.row -->
 
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Finance</h2>
-            </div>
-            <div class="col-md-4">
-                <a href="https://www.pegasuscaravanfinance.co.uk/humber-caravans/?introducer_contact_id=5944"> <img src="images/pegfin.jpg" class="img-responsive img-hover" alt=""></a>
-            </div>
-            <div class="col-md-3">
-                <h4>In proud partnership with Pegasus Finance please view their website to apply for finance on our mobile homes.</h4>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Finance</h2>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://www.pegasuscaravanfinance.co.uk/humber-caravans/?introducer_contact_id=5944"> <img src="images/pegfin.jpg" class="img-responsive img-hover" alt=""></a>
+                </div>
+                <div class="col-md-6">
+                    <h4>In proud partnership with Pegasus Finance please view their website to apply for finance on our mobile homes.</h4>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Social Media</h2>
-            </div>
-            <div class="col-md-4">
-                <a href="https://www.facebook.com/humber.caravans/"> <img src="images/facebook.jpg" class="img-responsive img-hover" alt=""></a>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Social Media</h2>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://www.facebook.com/humber.caravans/"> <img src="images/facebook.jpg" class="img-responsive img-hover" alt=""></a>
+                </div>
                 <br>
-                <a href="https://twitter.com/HumberCaravans"> <img src="images/twitter.jpg" class="img-responsive img-hover" alt=""></a>
+                <div class="col-md-6">
+                    <a href="https://twitter.com/HumberCaravans"> <img src="images/twitter.jpg" class="img-responsive img-hover" alt=""></a>
+                </div>
             </div>
-            
-            
-            
         </div>
 
         <div class="row">
