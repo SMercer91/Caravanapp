@@ -27,6 +27,7 @@ class CreateCaravanExtrasTable extends Migration
             $table->string('walk_in_wardrobe');
             $table->string('separate_toilet');
             $table->string('freestanding_furniture');
+            $table->string('ptr');
         });
     }
 
