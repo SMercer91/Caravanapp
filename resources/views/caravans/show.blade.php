@@ -22,13 +22,13 @@
                                 <h3>Images</h3>
                             <div class="row">      
                                 <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[1]->path) }}"></a></div>
-                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="images/4.jpg"></a></div>
-                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="images/4.jpg"></a></div>
+                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[2]->path) }}"></a></div>
+                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[3]->path) }}"></a></div>
                             </div>
                             <div class="row">
-                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="images/4.jpg"></a></div>
-                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="images/4.jpg"></a></div>
-                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="images/4.jpg"></a></div>
+                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[4]->path) }}"></a></div>
+                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[5]->path) }}"></a></div>
+                                <div class="col-md-2"><a href="#"><img class="thumbnail img-responsive" src="{{ asset($caravan->images[6]->path) }}"></a></div>
                             </div>
                         </div>
                         <div tabindex="-1" class="modal fade" id="myModal" role="dialog">
@@ -53,7 +53,7 @@
 
                                 <p>Bedrooms: {{ $caravan->bedrooms }}</p>
 
-                                
+                                <p>Extras: {{ $caravan->extras }}</p>
 
                                 <p>Description: {{ $caravan->description }}</p>
                                 <h2>£{{ $caravan->price }}</h2>

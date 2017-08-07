@@ -21,6 +21,7 @@
                                 <th>Size</th>
                                 <th>Bedrooms</th>
                                 <th>Price</th>
+                                <th>Extras</th>
                                 <th>Description</th>
                                 <th>Edit/Delete</th>
                             </tr>
@@ -33,6 +34,7 @@
                                 <th>Size</th>
                                 <th>Bedrooms</th>
                                 <th>Price</th>
+                                <th>Extras</th>
                                 <th>Description</th>
                                 <th>Edit/Delete</th>
                             </tr>
@@ -46,6 +48,7 @@
                                 <td>{{ $value->size }}</td>
                                 <td>{{ $value->bedrooms }}</td>
                                 <td>{{ $value->price }}</td>
+                                <td>{{ $value->extras }}</td>
                                 <td>{{ $value->description }}</td>
                                 <td>
                                     <a href="{{route('caravan.edit', ['id' => $value->id])}}" class="btn btn-info btn-xs"><i class="fa fa-pencil" title="Edit"></i> </a>

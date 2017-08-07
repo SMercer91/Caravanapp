@@ -21,6 +21,7 @@ class CreateCaravansTable extends Migration
             $table->string('size');
             $table->integer('bedrooms');
             $table->integer('price');
+            $table->string('extras');
             $table->string('description');
             $table->timestamps();
         });
