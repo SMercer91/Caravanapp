@@ -57,6 +57,7 @@
 
                                 <p>Description: {{ $caravan->description }}</p>
                                 <h2>£{{ $caravan->price }}</h2>
+                                <p> If you require more details about this caravan please call on: <strong>01430 448245</strong></p>
                             </div>
                         </div>
                     </div>
